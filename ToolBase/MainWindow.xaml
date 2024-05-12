@@ -1,0 +1,30 @@
+﻿<Window x:Class="ToolBase.MainWindow"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ToolBase - LuvCii" Background="#FFE8E8E8" WindowStartupLocation="CenterScreen"
+        WindowStyle="SingleBorderWindow" WindowState="Maximized" Width="1920" Height="911"
+        >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Thanh side bar -->
+        <Border Background="#FF3087D8" CornerRadius="0 20 20 0"   Margin="0,15,0,15" Width="330">
+            <StackPanel Margin="8" Width="315" Height="842">
+                <!-- Danh sách menu -->
+                <Button Content="Camp Base" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="White" Margin="0 0 0 16" Height="70" Background="#FF9A7493"/>
+                <Button Content="Log Base" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="White" Margin="0 0 0 16" Height="70"/>
+                <Button Content="Reg Base" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="White" Margin="0 0 0 16" Height="70" Background="#FF884F2E"/>
+                <Button Content="Share Base" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Foreground="White" Margin="0 0 0 16" Height="70" Background="#FF297F71"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Card chính -->
+        <Grid Grid.Column="1" Background="White" Margin="20,20,20,20">
+            <TextBlock Text="This is a card with sidebar" FontSize="20" Margin="10,15,0,0"/>
+        </Grid>
+    </Grid>
+</Window>
